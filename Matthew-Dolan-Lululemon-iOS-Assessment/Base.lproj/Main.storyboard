@@ -36,6 +36,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="yCm-tI-Avf"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Alpha"/>
                                         <connections>
                                             <action selector="alphaButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpL-4j-9aR"/>
@@ -43,6 +44,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzi-L5-xuc">
                                         <rect key="frame" x="187" y="0.0" width="187" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Creation Time"/>
                                         <connections>
                                             <action selector="creationTimeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfJ-vH-RKT"/>

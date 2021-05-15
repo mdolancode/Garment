@@ -42,25 +42,31 @@ class ListViewController: UIViewController {
     
     func buttonUI() {
         // alphaButton
-        alphaButton.backgroundColor = .red
+        alphaButton.backgroundColor = .white
         alphaButton.layer.borderColor = UIColor.black.cgColor
         alphaButton.layer.borderWidth = 1
         alphaButton.layer.cornerRadius = 10
         alphaButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        alphaButton.setTitle("Alpha", for: .normal)
+        alphaButton.titleLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
+        alphaButton.setTitleColor(.black, for: .normal)
         
         // creationTimButton
-        creationTimeButton.backgroundColor = .red
+        creationTimeButton.backgroundColor = .white
         creationTimeButton.layer.borderColor = UIColor.black.cgColor
         creationTimeButton.layer.borderWidth = 1
         creationTimeButton.layer.cornerRadius = 10
         creationTimeButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
-     
+        creationTimeButton.setTitle("Creation Time", for: .normal)
+        creationTimeButton.titleLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
+        creationTimeButton.setTitleColor(.black, for: .normal)
+        
     }
     
     //MARK: - TableView Border
     
     func addTopAndBottomBorder() {
-        let thickness: CGFloat = 2.0
+        let thickness: CGFloat = 1.0
         let topBorder = CALayer()
         let bottomBorder = CALayer()
         topBorder.frame = CGRect(x: 0.0, y: 0.0, width: self.tableView.frame.size.width, height: thickness)
