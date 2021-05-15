@@ -20,6 +20,10 @@ class ListViewController: UIViewController {
         navigationBarUI()
         buttonUI()
         addTopAndBottomBorder()
+        
+        // TableView Data Source & Delegate
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
@@ -75,6 +79,30 @@ class ListViewController: UIViewController {
         bottomBorder.backgroundColor = UIColor.black.cgColor
         tableView.layer.addSublayer(topBorder)
         tableView.layer.addSublayer(bottomBorder)
+    }
+}
+
+//MARK: - UITableViewDataSource
+
+extension ListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
+        
+        return cell
+    }
+}
+
+//MARK: - UITableViewDelegate
+
+extension ListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 }
 
