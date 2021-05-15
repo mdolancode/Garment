@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-EF-Ns0">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-EF-Ns0">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="List" id="98L-TK-NYQ">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zGh-EY-6j7">
@@ -29,25 +28,39 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzi-L5-xuc">
-                                <rect key="frame" x="254" y="133" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Creation Time"/>
-                                <connections>
-                                    <action selector="creationTimeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfJ-vH-RKT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foz-5V-wb1">
-                                <rect key="frame" x="91" y="133" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Alpha"/>
-                                <connections>
-                                    <action selector="alphaButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpL-4j-9aR"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y6z-Qe-smw" userLabel="Button Stack View">
+                                <rect key="frame" x="20" y="108" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foz-5V-wb1">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="yCm-tI-Avf"/>
+                                        </constraints>
+                                        <state key="normal" title="Alpha"/>
+                                        <connections>
+                                            <action selector="alphaButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpL-4j-9aR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzi-L5-xuc">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="40"/>
+                                        <state key="normal" title="Creation Time"/>
+                                        <connections>
+                                            <action selector="creationTimeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfJ-vH-RKT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y6z-Qe-smw" secondAttribute="trailing" constant="20" id="9gJ-Kl-udf"/>
+                            <constraint firstItem="kbU-EF-Ns0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ERy-xn-WJ5"/>
+                            <constraint firstItem="Y6z-Qe-smw" firstAttribute="top" secondItem="kbU-EF-Ns0" secondAttribute="bottom" constant="20" id="FjG-S1-8b9"/>
+                            <constraint firstItem="Y6z-Qe-smw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M4S-K6-ebY"/>
+                            <constraint firstItem="kbU-EF-Ns0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mwp-9C-Dgy"/>
+                            <constraint firstAttribute="trailing" secondItem="kbU-EF-Ns0" secondAttribute="trailing" id="nTF-bf-h8T"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="addBarButtonItem" destination="zGh-EY-6j7" id="PqP-e1-KEk"/>
@@ -57,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="100"/>
+            <point key="canvasLocation" x="-362" y="-16"/>
         </scene>
     </scenes>
     <resources>
