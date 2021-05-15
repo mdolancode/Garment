@@ -39,6 +39,7 @@ class ListViewController: UIViewController {
     
     func navigationBarUI() {
         navigationBar.barTintColor = .white
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!]
         addBarButtonItem.tintColor = .black
     }
     
