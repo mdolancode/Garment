@@ -50,6 +50,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wig-Ai-Vi8">
+                                <rect key="frame" x="0.0" y="168" width="414" height="694"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="koX-Mf-34M">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="koX-Mf-34M" id="Mly-pH-ODo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,6 +73,10 @@
                             <constraint firstItem="Y6z-Qe-smw" firstAttribute="top" secondItem="kbU-EF-Ns0" secondAttribute="bottom" constant="20" id="FjG-S1-8b9"/>
                             <constraint firstItem="Y6z-Qe-smw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M4S-K6-ebY"/>
                             <constraint firstItem="kbU-EF-Ns0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mwp-9C-Dgy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wig-Ai-Vi8" secondAttribute="trailing" id="RRU-Ny-Hv1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wig-Ai-Vi8" secondAttribute="bottom" id="VgT-Uy-fGp"/>
+                            <constraint firstItem="wig-Ai-Vi8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X1U-Is-mLG"/>
+                            <constraint firstItem="wig-Ai-Vi8" firstAttribute="top" secondItem="Y6z-Qe-smw" secondAttribute="bottom" constant="20" id="gnV-Og-93z"/>
                             <constraint firstAttribute="trailing" secondItem="kbU-EF-Ns0" secondAttribute="trailing" id="nTF-bf-h8T"/>
                         </constraints>
                     </view>
@@ -67,6 +85,7 @@
                         <outlet property="alphaButton" destination="foz-5V-wb1" id="DPY-z2-vLt"/>
                         <outlet property="creationTimeButton" destination="fzi-L5-xuc" id="SD1-r6-1Sd"/>
                         <outlet property="navigationBar" destination="kbU-EF-Ns0" id="EKW-wG-OsC"/>
+                        <outlet property="tableView" destination="wig-Ai-Vi8" id="NOf-Uv-JUf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
