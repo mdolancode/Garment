@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-362" y="-16"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="kmt-Vo-hJl">
             <objects>
-                <viewController id="LFn-xg-pjJ" sceneMemberID="viewController">
+                <viewController id="LFn-xg-pjJ" customClass="AddViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzq-Kv-qUj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
