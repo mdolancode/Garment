@@ -43,11 +43,18 @@ class ListViewController: UIViewController {
     func buttonUI() {
         // alphaButton
         alphaButton.backgroundColor = .red
-        alphaButton.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
+        alphaButton.layer.borderColor = UIColor.black.cgColor
+        alphaButton.layer.borderWidth = 1
+        alphaButton.layer.cornerRadius = 10
+        alphaButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
         
         // creationTimButton
-        creationTimeButton.backgroundColor = .black
-        creationTimeButton.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
+        creationTimeButton.backgroundColor = .red
+        creationTimeButton.layer.borderColor = UIColor.black.cgColor
+        creationTimeButton.layer.borderWidth = 1
+        creationTimeButton.layer.cornerRadius = 10
+        creationTimeButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+     
     }
     
     //MARK: - TableView Border
@@ -62,18 +69,6 @@ class ListViewController: UIViewController {
         bottomBorder.backgroundColor = UIColor.black.cgColor
         tableView.layer.addSublayer(topBorder)
         tableView.layer.addSublayer(bottomBorder)
-    }
-}
-
-    //MARK: - UIButton
-
-extension UIButton {
-    func roundCorners(corners: UIRectCorner, radius: Int = 8) {
-        let maskPath1 = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let maskLayer1 = CAShapeLayer()
-        maskLayer1.frame = bounds
-        maskLayer1.path = maskPath1.cgPath
-        layer.mask = maskLayer1
     }
 }
 
