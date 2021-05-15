@@ -9,12 +9,14 @@ import UIKit
 
 class ListViewController: UIViewController {
     
+    @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var alphaButton: UIButton!
     @IBOutlet weak var creationTimeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBarUI()
         buttonUI()
     }
     
@@ -27,6 +29,11 @@ class ListViewController: UIViewController {
     @IBAction func creationTimeButtonPressed(_ sender: UIButton) {
     }
     
+    func navigationBarUI() {
+        navigationBar.barTintColor = .white
+        addBarButtonItem.tintColor = .black
+    }
+    
     func buttonUI() {
         // alphaButton
         alphaButton.backgroundColor = .red
@@ -35,10 +42,10 @@ class ListViewController: UIViewController {
         // creationTimButton
         creationTimeButton.backgroundColor = .black
         creationTimeButton.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
-        
     }
 }
 
+//MARK: - UIButton
 extension UIButton {
     func roundCorners(corners: UIRectCorner, radius: Int = 8) {
         let maskPath1 = UIBezierPath(roundedRect: bounds,

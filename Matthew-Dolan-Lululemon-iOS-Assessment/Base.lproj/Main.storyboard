@@ -66,6 +66,7 @@
                         <outlet property="addBarButtonItem" destination="zGh-EY-6j7" id="PqP-e1-KEk"/>
                         <outlet property="alphaButton" destination="foz-5V-wb1" id="DPY-z2-vLt"/>
                         <outlet property="creationTimeButton" destination="fzi-L5-xuc" id="SD1-r6-1Sd"/>
+                        <outlet property="navigationBar" destination="kbU-EF-Ns0" id="EKW-wG-OsC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
