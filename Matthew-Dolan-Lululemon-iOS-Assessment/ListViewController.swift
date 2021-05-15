@@ -15,7 +15,7 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        buttonUI()
     }
     
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
@@ -25,6 +25,29 @@ class ListViewController: UIViewController {
     }
     
     @IBAction func creationTimeButtonPressed(_ sender: UIButton) {
+    }
+    
+    func buttonUI() {
+        // alphaButton
+        alphaButton.backgroundColor = .red
+        alphaButton.roundCorners(corners: [.topLeft, .bottomLeft], radius: 10)
+        
+        // creationTimButton
+        creationTimeButton.backgroundColor = .black
+        creationTimeButton.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
+        
+    }
+}
+
+extension UIButton {
+    func roundCorners(corners: UIRectCorner, radius: Int = 8) {
+        let maskPath1 = UIBezierPath(roundedRect: bounds,
+                                     byRoundingCorners: corners,
+                                     cornerRadii: CGSize(width: radius, height: radius))
+        let maskLayer1 = CAShapeLayer()
+        maskLayer1.frame = bounds
+        maskLayer1.path = maskPath1.cgPath
+        layer.mask = maskLayer1
     }
 }
 
