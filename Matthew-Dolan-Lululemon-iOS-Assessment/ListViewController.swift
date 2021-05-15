@@ -82,7 +82,7 @@ class ListViewController: UIViewController {
     }
 }
 
-//MARK: - UITableViewDataSource
+    //MARK: - UITableViewDataSource
 
 extension ListViewController: UITableViewDataSource {
     
@@ -98,7 +98,7 @@ extension ListViewController: UITableViewDataSource {
     }
 }
 
-//MARK: - UITableViewDelegate
+    //MARK: - UITableViewDelegate
 
 extension ListViewController: UITableViewDelegate {
     
