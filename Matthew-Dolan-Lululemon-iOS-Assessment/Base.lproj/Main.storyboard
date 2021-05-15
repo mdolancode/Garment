@@ -37,7 +37,6 @@
                                             <constraint firstAttribute="height" constant="40" id="yCm-tI-Avf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Alpha"/>
                                         <connections>
                                             <action selector="alphaButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpL-4j-9aR"/>
                                         </connections>
@@ -45,7 +44,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzi-L5-xuc">
                                         <rect key="frame" x="187" y="0.0" width="187" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Creation Time"/>
                                         <connections>
                                             <action selector="creationTimeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfJ-vH-RKT"/>
                                         </connections>
@@ -56,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="168" width="414" height="694"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="koX-Mf-34M">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableViewCell" id="koX-Mf-34M">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="koX-Mf-34M" id="Mly-pH-ODo">
