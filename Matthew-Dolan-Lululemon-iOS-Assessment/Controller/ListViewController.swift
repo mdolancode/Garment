@@ -40,7 +40,7 @@ class ListViewController: UIViewController {
     func navigationBarUI() {
         navigationBar.barTintColor = .white
         // TODO: Add Title here and take it out of Attributes inspector
-        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!]
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
         addBarButtonItem.tintColor = .black
     }
     
