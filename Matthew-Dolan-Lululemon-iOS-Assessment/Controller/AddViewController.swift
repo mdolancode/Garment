@@ -9,13 +9,22 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
+    @IBOutlet weak var garmentNameLabel: UILabel!
+    @IBOutlet weak var addGarmentTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBarUI()
+        garmentNameLabel.font = UIFont(name: "MarkerFelt-Thin", size: 24)
+        saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -25,5 +34,12 @@ class AddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //MARK: - NavigationBarUI
+    
+    func navigationBarUI() {
+        navigationBar.barTintColor = .white
+        // TODO: Add Title here and take it out of Attributes inspector
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
+    }
 }

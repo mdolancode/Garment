@@ -105,7 +105,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Add" id="PhO-9t-7zl">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" id="7LR-Gy-D3v"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="7LR-Gy-D3v">
+                                            <connections>
+                                                <action selector="saveButtonPressed:" destination="LFn-xg-pjJ" id="Rv7-oF-UIv"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -137,6 +141,12 @@
                             <constraint firstItem="4eS-qg-Xaa" firstAttribute="trailing" secondItem="4II-Xn-a1P" secondAttribute="trailing" constant="20" id="qYv-ng-3NN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addGarmentTextField" destination="4II-Xn-a1P" id="X1f-mO-q0a"/>
+                        <outlet property="garmentNameLabel" destination="MEc-IC-meJ" id="E2N-Tb-0AJ"/>
+                        <outlet property="navigationBar" destination="NLV-aE-hV4" id="qfQ-uw-Ppa"/>
+                        <outlet property="saveBarButtonItem" destination="7LR-Gy-D3v" id="eY8-Jc-EIC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xd-vR-TAA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
