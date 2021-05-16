@@ -9,6 +9,8 @@ import UIKit
 
 class ListViewController: UIViewController {
     
+    let garmentArray = ["Shirt", "Pants", "Hat"]
+    
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var alphaButton: UIButton!
@@ -89,12 +91,14 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return garmentArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
+        
+        cell.textLabel?.text = garmentArray[indexPath.row]
         
         return cell
     }
@@ -105,6 +109,7 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
