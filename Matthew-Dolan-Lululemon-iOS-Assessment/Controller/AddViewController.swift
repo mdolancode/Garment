@@ -17,8 +17,8 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBarUI()
-        garmentNameLabel.font = UIFont(name: "MarkerFelt-Thin", size: 24)
-        saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
+        textFieldUI()
+        garmentLabelUI()
     }
 
     @IBAction func saveButtonPressed(_ sender: Any) {
@@ -40,6 +40,23 @@ class AddViewController: UIViewController {
     func navigationBarUI() {
         navigationBar.barTintColor = .white
         // TODO: Add Title here and take it out of Attributes inspector
+//        navigationItem.title = "Add"
         navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
+        saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
+    }
+    
+    //MARK: - GarmentLabelUI
+    
+    func garmentLabelUI() {
+        garmentNameLabel.font = UIFont(name: "MarkerFelt-Thin", size: 24)
+        garmentNameLabel.text = "Garment Name:"
+    }
+    
+    //MARK: - UITextField
+    
+    func textFieldUI() {
+        addGarmentTextField.clearButtonMode = .whileEditing
+        addGarmentTextField.layer.borderWidth = 1
+        addGarmentTextField.layer.borderColor = UIColor.black.cgColor
     }
 }
