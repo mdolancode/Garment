@@ -9,7 +9,7 @@ import UIKit
 
 class ListViewController: UIViewController {
     
-    let garmentArray = ["Shirt", "Pants", "Hat"]
+    var garmentModel = GarmentModel()
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
@@ -26,6 +26,7 @@ class ListViewController: UIViewController {
         // TableView Data Source & Delegate
         tableView.dataSource = self
         tableView.delegate = self
+//        tableView.reloadData()
     }
     
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
@@ -92,14 +93,14 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return garmentArray.count
+        return garmentModel.garmentArray?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
         
-        cell.textLabel?.text = garmentArray[indexPath.row]
+        cell.textLabel?.text = garmentModel.garmentArray?[indexPath.row]
         
         return cell
     }
