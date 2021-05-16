@@ -16,6 +16,7 @@
 		C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A3264F689700C2BD99 /* LaunchScreen.storyboard */; };
 		C977B0B0264F689700C2BD99 /* Matthew_Dolan_Lululemon_iOS_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* Matthew_Dolan_Lululemon_iOS_AssessmentTests.swift */; };
 		C977B0BB264F689700C2BD99 /* Matthew_Dolan_Lululemon_iOS_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0BA264F689700C2BD99 /* Matthew_Dolan_Lululemon_iOS_AssessmentUITests.swift */; };
+		C9AED4822651B08B003425DC /* GarmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AED4812651B08B003425DC /* GarmentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C977B0B6264F689700C2BD99 /* Matthew-Dolan-Lululemon-iOS-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-Lululemon-iOS-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B0BA264F689700C2BD99 /* Matthew_Dolan_Lululemon_iOS_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_Lululemon_iOS_AssessmentUITests.swift; sourceTree = "<group>"; };
 		C977B0BC264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9AED4812651B08B003425DC /* GarmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		C92439472650850200D8F6CC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				C9AED4812651B08B003425DC /* GarmentModel.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */,
 				C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */,
+				C9AED4822651B08B003425DC /* GarmentModel.swift in Sources */,
 				C924393E2650846400D8F6CC /* AddViewController.swift in Sources */,
 				C977B09B264F689500C2BD99 /* SceneDelegate.swift in Sources */,
 			);
