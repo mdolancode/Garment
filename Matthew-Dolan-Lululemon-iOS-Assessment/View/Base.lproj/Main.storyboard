@@ -23,7 +23,6 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zGh-EY-6j7">
                                             <connections>
                                                 <action selector="addBarButtonItemPressed:" destination="BYZ-38-t0r" id="cvw-oU-irb"/>
-                                                <segue destination="LFn-xg-pjJ" kind="presentation" identifier="goToAdd" id="42z-Es-KJQ"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -87,6 +86,7 @@
                         <outlet property="creationTimeButton" destination="fzi-L5-xuc" id="SD1-r6-1Sd"/>
                         <outlet property="navigationBar" destination="kbU-EF-Ns0" id="EKW-wG-OsC"/>
                         <outlet property="tableView" destination="wig-Ai-Vi8" id="NOf-Uv-JUf"/>
+                        <segue destination="LFn-xg-pjJ" kind="presentation" identifier="goToAddScreen" id="42t-zu-IGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -29,6 +29,7 @@ class ListViewController: UIViewController {
     }
     
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "goToAddScreen", sender: self)
     }
     
     @IBAction func alphaButtonPressed(_ sender: UIButton) {
