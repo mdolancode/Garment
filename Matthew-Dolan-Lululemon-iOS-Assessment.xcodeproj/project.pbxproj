@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,7 @@
 		C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A3264F689700C2BD99 /* LaunchScreen.storyboard */; };
 		C977B0B0264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */; };
 		C977B0BB264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */; };
-		C9F87DAA2652D18100A05B90 /* Garment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F87DA92652D18100A05B90 /* Garment.swift */; };
+		C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F87DA92652D18100A05B90 /* GarmentData.swift */; };
 		E4A729E504615EBF5EC36BEB /* Pods_Matthew_Dolan_lululemon_iOS_Assessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913A261B2B37A30FF01C7DDF /* Pods_Matthew_Dolan_lululemon_iOS_Assessment.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,7 @@
 		C977B0B6264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift; sourceTree = "<group>"; };
 		C977B0BC264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9F87DA92652D18100A05B90 /* Garment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garment.swift; sourceTree = "<group>"; };
+		C9F87DA92652D18100A05B90 /* GarmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentData.swift; sourceTree = "<group>"; };
 		DD2FCAAB68C90C253432A5BE /* Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig"; path = "Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment/Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig"; sourceTree = "<group>"; };
 		E496EFF4381C79F9620A7850 /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,7 +105,6 @@
 				3B7D1DF24160C3D6690C6796 /* Pods-Matthew-Dolan-lululemon-iOS-AssessmentTests.debug.xcconfig */,
 				ACF3473C572E518D67BEBB06 /* Pods-Matthew-Dolan-lululemon-iOS-AssessmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -129,7 +128,7 @@
 		C92439472650850200D8F6CC /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				C9F87DA92652D18100A05B90 /* Garment.swift */,
+				C9F87DA92652D18100A05B90 /* GarmentData.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -439,7 +438,7 @@
 			files = (
 				C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */,
 				C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */,
-				C9F87DAA2652D18100A05B90 /* Garment.swift in Sources */,
+				C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */,
 				C924393E2650846400D8F6CC /* AddGarmentViewController.swift in Sources */,
 				C977B09B264F689500C2BD99 /* SceneDelegate.swift in Sources */,
 			);

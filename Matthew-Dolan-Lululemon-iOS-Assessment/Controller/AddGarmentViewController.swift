@@ -32,7 +32,7 @@ class AddGarmentViewController: UIViewController {
         }
         
         
-        let garment = Garment(garmentName: garmentName)
+        let garment = GarmentData(garmentName: garmentName)
         
         delegate?.addGarment(garment)
         
