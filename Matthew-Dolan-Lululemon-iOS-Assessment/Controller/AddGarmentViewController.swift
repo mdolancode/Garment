@@ -63,5 +63,6 @@ class AddGarmentViewController: UIViewController {
         addGarmentTextField.clearButtonMode = .whileEditing
         addGarmentTextField.layer.borderWidth = 1
         addGarmentTextField.layer.borderColor = UIColor.black.cgColor
+        addGarmentTextField.font = UIFont(name: "MarkerFelt-Thin", size: 16)
     }
 }

@@ -110,6 +110,7 @@ extension ListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
         
         cell.textLabel?.text = garments[indexPath.row].garmentName
+        cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
         
         return cell
     }
