@@ -22,7 +22,7 @@ class AddGarmentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationBarUI()
+        navigationBarUI()
         textFieldUI()
         garmentLabelUI()
     }
