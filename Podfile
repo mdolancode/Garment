@@ -1,7 +1,7 @@
 platform :ios, '9.0'
 
 target 'Matthew-Dolan-lululemon-iOS-Assessment' do
-  # Comment the next line if you don't want to use dynamic frameworks
+
   use_frameworks!
 
   # Pods for Matthew-Dolan-lululemon-iOS-Assessment
