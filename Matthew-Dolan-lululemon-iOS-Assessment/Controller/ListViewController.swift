@@ -9,8 +9,9 @@ import UIKit
 import RealmSwift
 
 class ListViewController: UIViewController {
-
-    var garments = [GarmentData]()
+    
+    let realm = try! Realm()
+    var garments: Results<GarmentData>?
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
@@ -24,12 +25,13 @@ class ListViewController: UIViewController {
         buttonUI()
         addTopAndBottomBorder()
         
-        // TableView Data Source & Delegate
         tableView.dataSource = self
         tableView.delegate = self
+        
+        loadGarmentData()
     }
     
-    //MARK: - Navigation to AddGarmentViewController
+    //MARK: - Navigate to AddGarmentViewController
     
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
         guard let vc = storyboard?.instantiateViewController(identifier: "AddGarmentViewController") as? AddGarmentViewController else {
@@ -41,9 +43,11 @@ class ListViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    //MARK: - Sort AlphabeticalOrder and CreationTime
+    //MARK: - Sort Alphabetical Order and Creation Time
     
     @IBAction func alphaButtonPressed(_ sender: UIButton) {
+        garments = garments?.sorted(byKeyPath: "garmentName", ascending: true)
+            
     }
     
     @IBAction func creationTimeButtonPressed(_ sender: UIButton) {
@@ -83,7 +87,7 @@ class ListViewController: UIViewController {
         
     }
     
-    //MARK: - TableView Border
+    //MARK: - TableViewUI
     
     func addTopAndBottomBorder() {
         let thickness: CGFloat = 1.0
@@ -103,14 +107,14 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return garments.count
+        return garments?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
         
-        cell.textLabel?.text = garments[indexPath.row].garmentName
+        cell.textLabel?.text = garments?[indexPath.row].garmentName ?? "No garments added yet."
         cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
         
         return cell
@@ -131,9 +135,13 @@ extension ListViewController: UITableViewDelegate {
 extension ListViewController: AddGarmentDelegate {
     func addGarment(_ garment: GarmentData) {
         self.dismiss(animated: true) {
-            self.garments.append(garment)
             self.tableView.reloadData()
         }
     }
+     
+    func loadGarmentData() {
+        self.garments = self.realm.objects(GarmentData.self)
+        self.tableView.reloadData()
+    }
 }
-
+ 
