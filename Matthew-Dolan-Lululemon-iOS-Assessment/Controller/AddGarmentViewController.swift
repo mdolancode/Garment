@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol AddGarmentDelegate {
-    func addGarment(garment: Garment)
-}
-
 class AddGarmentViewController: UIViewController {
     
     var delegate: AddGarmentDelegate?

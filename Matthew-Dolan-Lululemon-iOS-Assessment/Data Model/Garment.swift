@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol AddGarmentDelegate {
+    func addGarment(garment: Garment)
+}
+
 struct Garment {
     var garmentName: String
 }
