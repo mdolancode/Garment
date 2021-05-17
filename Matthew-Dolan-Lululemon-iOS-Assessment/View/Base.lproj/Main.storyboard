@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="-362" y="-16"/>
         </scene>
-        <!--Add View Controller-->
+        <!--Add Garment View Controller-->
         <scene sceneID="kmt-Vo-hJl">
             <objects>
-                <viewController id="LFn-xg-pjJ" customClass="AddViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LFn-xg-pjJ" customClass="AddGarmentViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzq-Kv-qUj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,7 @@
                                     <navigationItem title="Add" id="PhO-9t-7zl">
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="7LR-Gy-D3v">
                                             <connections>
-                                                <action selector="saveButtonPressed:" destination="LFn-xg-pjJ" id="Rv7-oF-UIv"/>
+                                                <action selector="saveButtonPressed:" destination="LFn-xg-pjJ" id="kYf-jq-gQ6"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xd-vR-TAA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="602.89855072463774" y="-16.071428571428569"/>
+            <point key="canvasLocation" x="888" y="-16"/>
         </scene>
     </scenes>
     <resources>

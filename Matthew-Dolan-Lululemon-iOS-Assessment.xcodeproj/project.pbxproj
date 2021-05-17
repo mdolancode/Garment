@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C924393E2650846400D8F6CC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924393D2650846400D8F6CC /* AddViewController.swift */; };
+		C924393E2650846400D8F6CC /* AddGarmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924393D2650846400D8F6CC /* AddGarmentViewController.swift */; };
 		C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B098264F689500C2BD99 /* AppDelegate.swift */; };
 		C977B09B264F689500C2BD99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B09A264F689500C2BD99 /* SceneDelegate.swift */; };
 		C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B09C264F689500C2BD99 /* ListViewController.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C924393D2650846400D8F6CC /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C924393D2650846400D8F6CC /* AddGarmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentViewController.swift; sourceTree = "<group>"; };
 		C977B095264F689500C2BD99 /* Matthew-Dolan-Lululemon-iOS-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matthew-Dolan-Lululemon-iOS-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B098264F689500C2BD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C977B09A264F689500C2BD99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C977B09C264F689500C2BD99 /* ListViewController.swift */,
-				C924393D2650846400D8F6CC /* AddViewController.swift */,
+				C924393D2650846400D8F6CC /* AddGarmentViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 				C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */,
 				C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */,
 				C9AED4822651B08B003425DC /* GarmentModel.swift in Sources */,
-				C924393E2650846400D8F6CC /* AddViewController.swift in Sources */,
+				C924393E2650846400D8F6CC /* AddGarmentViewController.swift in Sources */,
 				C977B09B264F689500C2BD99 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
