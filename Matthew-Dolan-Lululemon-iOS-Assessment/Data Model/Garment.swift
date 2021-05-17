@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol AddGarmentDelegate {
     func addGarment(_ garment: Garment)
 }
 
-struct Garment {
-    var garmentName: String
+class Garment: Object {
+    @objc dynamic var garmentName: String = ""
+    
+    convenience init(garmentName: String) {
+        self.init()
+        self.garmentName = garmentName
+    }
 }

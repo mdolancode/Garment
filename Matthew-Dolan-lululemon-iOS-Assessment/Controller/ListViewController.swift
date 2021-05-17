@@ -10,6 +10,7 @@ import RealmSwift
 
 class ListViewController: UIViewController {
     
+    let localRealm = try! Realm()
     var garments = [Garment]()
     
     @IBOutlet weak var navigationBar: UINavigationBar!
