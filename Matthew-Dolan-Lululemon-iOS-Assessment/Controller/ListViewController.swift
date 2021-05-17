@@ -9,8 +9,6 @@ import UIKit
 
 class ListViewController: UIViewController {
     
-//    var garmentModel = GarmentModel()
-    
     var garments = [Garment]()
     
     @IBOutlet weak var navigationBar: UINavigationBar!
@@ -99,7 +97,7 @@ class ListViewController: UIViewController {
     }
 }
 
-    //MARK: - UITableViewDataSource
+//MARK: - UITableViewDataSource
 
 extension ListViewController: UITableViewDataSource {
     
@@ -117,7 +115,7 @@ extension ListViewController: UITableViewDataSource {
     }
 }
 
-    //MARK: - UITableViewDelegate
+//MARK: - UITableViewDelegate
 
 extension ListViewController: UITableViewDelegate {
     

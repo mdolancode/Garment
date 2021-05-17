@@ -10,7 +10,7 @@ import UIKit
 class AddGarmentViewController: UIViewController {
     
     var delegate: AddGarmentDelegate?
-
+    
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var garmentNameLabel: UILabel!
@@ -22,7 +22,7 @@ class AddGarmentViewController: UIViewController {
         textFieldUI()
         garmentLabelUI()
     }
-
+    
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         
         guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
@@ -37,7 +37,7 @@ class AddGarmentViewController: UIViewController {
         delegate?.addGarment(garment)
         
         print(garment.garmentName)
-
+        
     }
     
     //MARK: - NavigationBarUI
@@ -45,7 +45,7 @@ class AddGarmentViewController: UIViewController {
     func navigationBarUI() {
         navigationBar.barTintColor = .white
         // TODO: Add Title here and take it out of Attributes inspector
-//        navigationItem.title = "Add"
+        //        navigationItem.title = "Add"
         navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
         saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
     }
