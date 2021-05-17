@@ -9,9 +9,8 @@ import UIKit
 import RealmSwift
 
 class ListViewController: UIViewController {
-    
-    let localRealm = try! Realm()
-    var garments = [Garment]()
+
+    var garments = [GarmentData]()
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
@@ -130,7 +129,7 @@ extension ListViewController: UITableViewDelegate {
 //MARK: - AddGarmentDelegate
 
 extension ListViewController: AddGarmentDelegate {
-    func addGarment(_ garment: Garment) {
+    func addGarment(_ garment: GarmentData) {
         self.dismiss(animated: true) {
             self.garments.append(garment)
             self.tableView.reloadData()

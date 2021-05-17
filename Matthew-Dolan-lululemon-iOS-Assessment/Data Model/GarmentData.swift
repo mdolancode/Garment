@@ -9,10 +9,10 @@ import UIKit
 import RealmSwift
 
 protocol AddGarmentDelegate {
-    func addGarment(_ garment: Garment)
+    func addGarment(_ garment: GarmentData)
 }
 
-class Garment: Object {
+class GarmentData: Object {
     @objc dynamic var garmentName: String = ""
     
     convenience init(garmentName: String) {
