@@ -7,7 +7,13 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+protocol AddGarmentDelegate {
+    func addGarment(garment: Garment)
+}
+
+class AddGarmentViewController: UIViewController {
+    
+    var delegate: AddGarmentDelegate?
 
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
@@ -16,24 +22,27 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBarUI()
+//        navigationBarUI()
         textFieldUI()
         garmentLabelUI()
     }
 
-    @IBAction func saveButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    /*
-    // MARK: - Navigation
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        
+        guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
+            
+            print("Handle error")
+            return
+        }
+        
+        
+        let garment = Garment(garmentName: garmentName)
+        
+        delegate?.addGarment(garment: garment)
+        
+        print(garment.garmentName)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
     
     //MARK: - NavigationBarUI
     

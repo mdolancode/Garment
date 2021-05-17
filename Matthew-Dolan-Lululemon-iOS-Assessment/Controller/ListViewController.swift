@@ -7,9 +7,15 @@
 
 import UIKit
 
+struct Garment {
+    var garmentName: String
+}
+
 class ListViewController: UIViewController {
     
-    var garmentModel = GarmentModel()
+//    var garmentModel = GarmentModel()
+    
+    var garments = [Garment]()
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
@@ -93,14 +99,14 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return garmentModel.garmentArray?.count ?? 1
+        return garments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
         
-        cell.textLabel?.text = garmentModel.garmentArray?[indexPath.row]
+        cell.textLabel?.text = garments[indexPath.row].garmentName
         
         return cell
     }
@@ -112,6 +118,17 @@ extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+//MARK: - AddGarmentDelegate
+
+extension ListViewController: AddGarmentDelegate {
+    func addGarment(garment: Garment) {
+        self.dismiss(animated: true) {
+            self.garments.append(garment)
+            self.tableView.reloadData()
+        }
     }
 }
 
