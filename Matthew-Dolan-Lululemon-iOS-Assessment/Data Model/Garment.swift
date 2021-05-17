@@ -8,7 +8,7 @@
 import UIKit
 
 protocol AddGarmentDelegate {
-    func addGarment(garment: Garment)
+    func addGarment(_ garment: Garment)
 }
 
 struct Garment {

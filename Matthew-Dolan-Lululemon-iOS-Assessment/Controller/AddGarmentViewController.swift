@@ -34,7 +34,7 @@ class AddGarmentViewController: UIViewController {
         
         let garment = Garment(garmentName: garmentName)
         
-        delegate?.addGarment(garment: garment)
+        delegate?.addGarment(garment)
         
         print(garment.garmentName)
 

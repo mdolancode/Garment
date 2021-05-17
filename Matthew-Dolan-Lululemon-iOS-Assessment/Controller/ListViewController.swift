@@ -129,7 +129,7 @@ extension ListViewController: UITableViewDelegate {
 //MARK: - AddGarmentDelegate
 
 extension ListViewController: AddGarmentDelegate {
-    func addGarment(garment: Garment) {
+    func addGarment(_ garment: Garment) {
         self.dismiss(animated: true) {
             self.garments.append(garment)
             self.tableView.reloadData()
