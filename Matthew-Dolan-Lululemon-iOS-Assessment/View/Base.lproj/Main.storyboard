@@ -11,7 +11,7 @@
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="BYZ-38-t0r" customClass="ListViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +86,6 @@
                         <outlet property="creationTimeButton" destination="fzi-L5-xuc" id="SD1-r6-1Sd"/>
                         <outlet property="navigationBar" destination="kbU-EF-Ns0" id="EKW-wG-OsC"/>
                         <outlet property="tableView" destination="wig-Ai-Vi8" id="NOf-Uv-JUf"/>
-                        <segue destination="LFn-xg-pjJ" kind="presentation" identifier="goToAddScreen" id="42t-zu-IGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -96,13 +95,13 @@
         <!--Add Garment View Controller-->
         <scene sceneID="kmt-Vo-hJl">
             <objects>
-                <viewController id="LFn-xg-pjJ" customClass="AddGarmentViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddGarmentViewController" id="LFn-xg-pjJ" customClass="AddGarmentViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzq-Kv-qUj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLV-aE-hV4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Add" id="PhO-9t-7zl">
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="7LR-Gy-D3v">
@@ -114,13 +113,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEc-IC-meJ">
-                                <rect key="frame" x="20" y="76" width="374" height="0.0"/>
+                                <rect key="frame" x="20" y="108" width="374" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4II-Xn-a1P">
-                                <rect key="frame" x="20" y="96" width="374" height="40"/>
+                                <rect key="frame" x="20" y="128" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hb1-aJ-QS6"/>
                                 </constraints>
