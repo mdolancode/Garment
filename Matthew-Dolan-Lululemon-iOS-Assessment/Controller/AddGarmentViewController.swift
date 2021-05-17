@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class AddGarmentViewController: UIViewController {
+    
+    let realm = try! Realm()
     
     var delegate: AddGarmentDelegate?
     
@@ -23,29 +26,12 @@ class AddGarmentViewController: UIViewController {
         garmentLabelUI()
     }
     
-    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
-        
-        guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
-            
-            print("Handle error")
-            return
-        }
-        
-        
-        let garment = GarmentData(garmentName: garmentName)
-        
-        delegate?.addGarment(garment)
-        
-        print(garment.garmentName)
-        
-    }
-    
     //MARK: - NavigationBarUI
     
     func navigationBarUI() {
         navigationBar.barTintColor = .white
         // TODO: Add Title here and take it out of Attributes inspector
-        //        navigationItem.title = "Add"
+//        navigationItem.title = "Add"
         navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
         saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
     }
@@ -64,5 +50,32 @@ class AddGarmentViewController: UIViewController {
         addGarmentTextField.layer.borderWidth = 1
         addGarmentTextField.layer.borderColor = UIColor.black.cgColor
         addGarmentTextField.font = UIFont(name: "MarkerFelt-Thin", size: 16)
+    }
+    
+    
+    //MARK: - Save Button
+    
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        sendToDelegateWriteToRealm()
+    }
+    
+    //MARK: - Send To AddGarmentDelegate And Write To Realm
+    
+    func sendToDelegateWriteToRealm() {
+        guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
+            print("Error adding garment.")
+            return
+        }
+        
+        let garment = GarmentData(garmentName: garmentName)
+        delegate?.addGarment(garment)
+        
+        do {
+            try self.realm.write {
+                self.realm.add(garment)
+            }
+        } catch {
+            print("Error saving garment\(error)")
+        }
     }
 }
