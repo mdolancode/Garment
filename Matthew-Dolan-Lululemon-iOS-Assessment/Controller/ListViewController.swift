@@ -7,10 +7,6 @@
 
 import UIKit
 
-struct Garment {
-    var garmentName: String
-}
-
 class ListViewController: UIViewController {
     
 //    var garmentModel = GarmentModel()
