@@ -32,12 +32,21 @@ class ListViewController: UIViewController {
         // TableView Data Source & Delegate
         tableView.dataSource = self
         tableView.delegate = self
-//        tableView.reloadData()
     }
     
+    //MARK: - Navigation to AddGarmentViewController
+    
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "goToAddScreen", sender: self)
+        guard let vc = storyboard?.instantiateViewController(identifier: "AddGarmentViewController") as? AddGarmentViewController else {
+            print("Failed to get vc from storyboard")
+            return
+        }
+        
+        vc.delegate = self
+        present(vc, animated: true)
     }
+    
+    //MARK: - Sort AlphabeticalOrder and CreationTime
     
     @IBAction func alphaButtonPressed(_ sender: UIButton) {
     }
