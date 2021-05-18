@@ -1,5 +1,5 @@
 //
-//  DatabaseType.swift
+//  DatabaseLayer.swift
 //  Matthew-Dolan-lululemon-iOS-Assessment
 //
 //  Created by Matt Dolan External macOS on 2021-05-17.
@@ -10,7 +10,7 @@ import RealmSwift
 
 // create dependency class ina seperate class and then call the depenceny in the AddGarmentVC to then be able to save
 
-class DatabaseType {
+class DatabaseLayer {
     
     let realm = try! Realm()
     
@@ -35,7 +35,7 @@ class DatabaseType {
 // Add label database failed to save
 
 
-class MockDatabaseType: DatabaseType {
+class MockDatabaseLayer: DatabaseLayer {
     var savesSuccessfully: Bool = false
     
     override func save(garment: GarmentData) -> Bool {
