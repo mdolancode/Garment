@@ -16,7 +16,7 @@ class DatabaseLayer {
     
     //MARK: - Save To Realm
     
-    func save(garment: GarmentData) -> Bool {
+    func saveData(garment: GarmentData) -> Bool {
         do {
             try self.realm.write {
                 self.realm.add(garment)
@@ -38,7 +38,7 @@ class DatabaseLayer {
 class MockDatabaseLayer: DatabaseLayer {
     var savesSuccessfully: Bool = false
     
-    override func save(garment: GarmentData) -> Bool {
+    override func saveData(garment: GarmentData) -> Bool {
         return savesSuccessfully
     }
 }
