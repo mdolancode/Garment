@@ -10,6 +10,7 @@
 		2819A1ECA93F1B2C10248A9A /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496EFF4381C79F9620A7850 /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework */; };
 		3CA304D764DD969637B0463C /* Pods_Matthew_Dolan_lululemon_iOS_AssessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB1033DDA1AFDC6EA6E680 /* Pods_Matthew_Dolan_lululemon_iOS_AssessmentTests.framework */; };
 		C924393E2650846400D8F6CC /* AddGarmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924393D2650846400D8F6CC /* AddGarmentViewController.swift */; };
+		C93A9501265430C800BD9426 /* MockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A9500265430C800BD9426 /* MockDelegate.swift */; };
 		C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B098264F689500C2BD99 /* AppDelegate.swift */; };
 		C977B09B264F689500C2BD99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B09A264F689500C2BD99 /* SceneDelegate.swift */; };
 		C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B09C264F689500C2BD99 /* ListViewController.swift */; };
@@ -18,7 +19,7 @@
 		C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A3264F689700C2BD99 /* LaunchScreen.storyboard */; };
 		C977B0B0264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */; };
 		C977B0BB264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */; };
-		C9EECA73265386B3008FE535 /* DatabaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA72265386B2008FE535 /* DatabaseType.swift */; };
+		C9EECA73265386B3008FE535 /* DatabaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA72265386B2008FE535 /* DatabaseLayer.swift */; };
 		C9EECA9326541781008FE535 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA9226541781008FE535 /* Dependencies.swift */; };
 		C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F87DA92652D18100A05B90 /* GarmentData.swift */; };
 		E4A729E504615EBF5EC36BEB /* Pods_Matthew_Dolan_lululemon_iOS_Assessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913A261B2B37A30FF01C7DDF /* Pods_Matthew_Dolan_lululemon_iOS_Assessment.framework */; };
@@ -50,6 +51,7 @@
 		971BC2ABB4BAC7F894DB4142 /* Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACF3473C572E518D67BEBB06 /* Pods-Matthew-Dolan-lululemon-iOS-AssessmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Dolan-lululemon-iOS-AssessmentTests.release.xcconfig"; path = "Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-AssessmentTests/Pods-Matthew-Dolan-lululemon-iOS-AssessmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		C924393D2650846400D8F6CC /* AddGarmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentViewController.swift; sourceTree = "<group>"; };
+		C93A9500265430C800BD9426 /* MockDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDelegate.swift; sourceTree = "<group>"; };
 		C977B095264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B098264F689500C2BD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C977B09A264F689500C2BD99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		C977B0B6264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift; sourceTree = "<group>"; };
 		C977B0BC264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9EECA72265386B2008FE535 /* DatabaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseType.swift; sourceTree = "<group>"; };
+		C9EECA72265386B2008FE535 /* DatabaseLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseLayer.swift; sourceTree = "<group>"; };
 		C9EECA9226541781008FE535 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		C9F87DA92652D18100A05B90 /* GarmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentData.swift; sourceTree = "<group>"; };
 		DD2FCAAB68C90C253432A5BE /* Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig"; path = "Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment/Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,7 +181,7 @@
 		C977B0AE264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				C9EECA7B26539041008FE535 /* Mock */,
+				C93A9500265430C800BD9426 /* MockDelegate.swift */,
 				C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */,
 				C977B0B1264F689700C2BD99 /* Info.plist */,
 			);
@@ -198,16 +200,9 @@
 		C9EECA7A265386CE008FE535 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C9EECA72265386B2008FE535 /* DatabaseType.swift */,
+				C9EECA72265386B2008FE535 /* DatabaseLayer.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		C9EECA7B26539041008FE535 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mock;
 			sourceTree = "<group>";
 		};
 		C9EECA8526540C8C008FE535 /* Dependencies */ = {
@@ -467,7 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9EECA9326541781008FE535 /* Dependencies.swift in Sources */,
-				C9EECA73265386B3008FE535 /* DatabaseType.swift in Sources */,
+				C9EECA73265386B3008FE535 /* DatabaseLayer.swift in Sources */,
 				C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */,
 				C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */,
 				C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */,
@@ -480,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93A9501265430C800BD9426 /* MockDelegate.swift in Sources */,
 				C977B0B0264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
