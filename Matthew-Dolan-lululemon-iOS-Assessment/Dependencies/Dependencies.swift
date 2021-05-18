@@ -8,22 +8,22 @@
 import UIKit
 
 class Dependencies: HasDatabase, HasGarmentData, HasApplication {
-    let database: DatabaseType
+    let database: DatabaseLayer
     let garmentData: GarmentData
     let application: UIApplication
-    
-    init(database: DatabaseType? = nil,
+
+    init(database: DatabaseLayer? = nil,
          garmentData: GarmentData? = nil,
-         application: UIApplication) {
+         application: UIApplication?) {
         let garment = garmentData ?? GarmentData()
-        self.database = database ?? DatabaseType()
+        self.database = database ?? DatabaseLayer()
         self.garmentData = garment
-        self.application = application
+        self.application = application ?? UIApplication.shared
     }
 }
 
 protocol HasDatabase {
-    var database: DatabaseType { get }
+    var database: DatabaseLayer { get }
 }
 
 protocol HasGarmentData {
