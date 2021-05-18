@@ -11,7 +11,7 @@
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ListViewController" id="BYZ-38-t0r" customClass="ListViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListViewController" id="BYZ-38-t0r" customClass="ListViewController" customModule="Matthew_Dolan_lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbU-EF-Ns0">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="List" id="98L-TK-NYQ">
+                                    <navigationItem id="98L-TK-NYQ">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zGh-EY-6j7">
                                             <connections>
                                                 <action selector="addBarButtonItemPressed:" destination="BYZ-38-t0r" id="cvw-oU-irb"/>
@@ -95,7 +95,7 @@
         <!--Add Garment View Controller-->
         <scene sceneID="kmt-Vo-hJl">
             <objects>
-                <viewController storyboardIdentifier="AddGarmentViewController" id="LFn-xg-pjJ" customClass="AddGarmentViewController" customModule="Matthew_Dolan_Lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddGarmentViewController" id="LFn-xg-pjJ" customClass="AddGarmentViewController" customModule="Matthew_Dolan_lululemon_iOS_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzq-Kv-qUj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
