@@ -30,8 +30,10 @@ class AddGarmentViewController: UIViewController {
     
     func navigationBarUI() {
         navigationBar.barTintColor = .white
+        
         navigationBar.topItem?.title = "Add"
         navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
+        
         saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
         
         navigationBar.layer.masksToBounds = false
@@ -52,9 +54,9 @@ class AddGarmentViewController: UIViewController {
     
     func textFieldUI() {
         addGarmentTextField.clearButtonMode = .whileEditing
+        addGarmentTextField.font = UIFont(name: "MarkerFelt-Thin", size: 16)
         addGarmentTextField.layer.borderWidth = 1
         addGarmentTextField.layer.borderColor = UIColor.black.cgColor
-        addGarmentTextField.font = UIFont(name: "MarkerFelt-Thin", size: 16)
     }
     
     //MARK: - Save Button
@@ -83,56 +85,4 @@ class AddGarmentViewController: UIViewController {
 //            //            sendData(garmentData)
 //        }
     }
-    
-    //MARK: - Send to AddGarmentDelegate
-    //
-    //    func sendToDelegate(garmentName: String, dateCreated: String) {
-    //        let garment = GarmentData(garmentName: garmentName, dateCreated: dateCreated)
-    //        delegate?.addGarment(garment)
-    //    }
-    
-    //MARK: - Get Textfield Input
-//
-//    func getGarmentName() -> String? {
-//        let garmentName = addGarmentTextField.text
-//        if garmentName == addGarmentTextField.text, addGarmentTextField.hasText {
-//            return garmentName
-//        }
-//        return garmentName
-//    }
-    
-    //MARK: - Get Date
-    //    func getDate() -> String {
-    //        // Gets the current date and time.
-    //        let currentDateTime = Date()
-    //
-    //        // Initializes the date formatter and set the style.
-    //        let formatter = DateFormatter()
-    //        formatter.timeStyle = .medium
-    //        formatter.dateStyle = .long
-    //
-    //        // Gets the date and time String from the date object.
-    //        let dateCreated = formatter.string(from: currentDateTime)
-    //
-    //        return dateCreated
-    //    }
 }
-
-//        func sendToDelegateWriteToRealm() {
-//            guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
-//                print("Error adding garment.")
-//                return
-//            }
-//
-//
-//            let garment = GarmentData(garmentName: garmentName, dateCreated: dateCreated)
-//            delegate?.addGarment(garment)
-//
-//            do {
-//                try self.realm.write {
-//                    self.realm.add(garment)
-//                }
-//            } catch {
-//                print("Error saving garment\(error)")
-//            }
-//        }
