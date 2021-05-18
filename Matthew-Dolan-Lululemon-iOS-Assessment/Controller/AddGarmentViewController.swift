@@ -11,7 +11,7 @@ import RealmSwift
 class AddGarmentViewController: UIViewController {
     
     let realm = try! Realm()
-    
+//    let dependencies: Dependencies? = nil
     var delegate: AddGarmentDelegate?
     
     @IBOutlet weak var navigationBar: UINavigationBar!
@@ -30,10 +30,15 @@ class AddGarmentViewController: UIViewController {
     
     func navigationBarUI() {
         navigationBar.barTintColor = .white
-        // TODO: Add Title here and take it out of Attributes inspector
-//        navigationItem.title = "Add"
+        navigationBar.topItem?.title = "Add"
         navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 20)!]
         saveBarButtonItem.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MarkerFelt-Thin", size: 18)!], for: .normal)
+        
+        navigationBar.layer.masksToBounds = false
+        navigationBar.layer.shadowColor = UIColor.black.cgColor
+        navigationBar.layer.shadowOpacity = 1.0
+        navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+        navigationBar.layer.shadowRadius = 0.1
     }
     
     //MARK: - GarmentLabelUI
@@ -52,30 +57,82 @@ class AddGarmentViewController: UIViewController {
         addGarmentTextField.font = UIFont(name: "MarkerFelt-Thin", size: 16)
     }
     
-    
     //MARK: - Save Button
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
-        sendToDelegateWriteToRealm()
-    }
-    
-    //MARK: - Send To AddGarmentDelegate And Write To Realm
-    
-    func sendToDelegateWriteToRealm() {
+        
         guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
             print("Error adding garment.")
             return
         }
         
-        let garment = GarmentData(garmentName: garmentName)
-        delegate?.addGarment(garment)
+        let dateCreated = Date()
+        let garmentData = GarmentData(garmentName: garmentName, dateCreated: dateCreated)
+        
+        delegate?.addGarment(garmentData)
         
         do {
             try self.realm.write {
-                self.realm.add(garment)
+                self.realm.add(garmentData)
             }
         } catch {
             print("Error saving garment\(error)")
         }
+        
+//        if dependencies?.database.save(garment: garmentData) != nil {
+//            //            sendData(garmentData)
+//        }
     }
+    
+    //MARK: - Send to AddGarmentDelegate
+    //
+    //    func sendToDelegate(garmentName: String, dateCreated: String) {
+    //        let garment = GarmentData(garmentName: garmentName, dateCreated: dateCreated)
+    //        delegate?.addGarment(garment)
+    //    }
+    
+    //MARK: - Get Textfield Input
+//
+//    func getGarmentName() -> String? {
+//        let garmentName = addGarmentTextField.text
+//        if garmentName == addGarmentTextField.text, addGarmentTextField.hasText {
+//            return garmentName
+//        }
+//        return garmentName
+//    }
+    
+    //MARK: - Get Date
+    //    func getDate() -> String {
+    //        // Gets the current date and time.
+    //        let currentDateTime = Date()
+    //
+    //        // Initializes the date formatter and set the style.
+    //        let formatter = DateFormatter()
+    //        formatter.timeStyle = .medium
+    //        formatter.dateStyle = .long
+    //
+    //        // Gets the date and time String from the date object.
+    //        let dateCreated = formatter.string(from: currentDateTime)
+    //
+    //        return dateCreated
+    //    }
 }
+
+//        func sendToDelegateWriteToRealm() {
+//            guard let garmentName = addGarmentTextField.text, addGarmentTextField.hasText else {
+//                print("Error adding garment.")
+//                return
+//            }
+//
+//
+//            let garment = GarmentData(garmentName: garmentName, dateCreated: dateCreated)
+//            delegate?.addGarment(garment)
+//
+//            do {
+//                try self.realm.write {
+//                    self.realm.add(garment)
+//                }
+//            } catch {
+//                print("Error saving garment\(error)")
+//            }
+//        }
