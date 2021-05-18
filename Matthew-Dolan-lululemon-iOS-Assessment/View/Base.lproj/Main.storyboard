@@ -103,7 +103,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLV-aE-hV4">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Add" id="PhO-9t-7zl">
+                                    <navigationItem id="PhO-9t-7zl">
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="7LR-Gy-D3v">
                                             <connections>
                                                 <action selector="saveButtonPressed:" destination="LFn-xg-pjJ" id="kYf-jq-gQ6"/>
