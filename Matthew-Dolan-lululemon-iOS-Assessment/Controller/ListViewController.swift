@@ -88,6 +88,13 @@ class ListViewController: UIViewController {
         return view
     }
     
+    //MARK: - LoadGarmentData
+    
+    func loadGarmentData() {
+        self.garments = self.realm.objects(GarmentData.self)
+        self.tableView.reloadData()
+    }
+    
     //MARK: - NavigateToAddGarmentViewController
     
     @IBAction func addBarButtonItemPressed(_ sender: UIBarButtonItem) {
@@ -151,6 +158,7 @@ extension ListViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
         
+        // TODO: Not being populated when there are no garments loadGaramentData happens first.????
         cell.textLabel?.text = garments?[indexPath.row].garmentName ?? "No garments added yet."
         cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
         
@@ -176,11 +184,6 @@ extension ListViewController: AddGarmentDelegate {
         self.dismiss(animated: true) {
             self.tableView.reloadData()
         }
-    }
-    
-    func loadGarmentData() {
-        self.garments = self.realm.objects(GarmentData.self)
-        self.tableView.reloadData()
     }
 }
 
