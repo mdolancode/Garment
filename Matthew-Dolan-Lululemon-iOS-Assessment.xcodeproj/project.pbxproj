@@ -18,6 +18,8 @@
 		C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A3264F689700C2BD99 /* LaunchScreen.storyboard */; };
 		C977B0B0264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */; };
 		C977B0BB264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */; };
+		C9EECA73265386B3008FE535 /* DatabaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA72265386B2008FE535 /* DatabaseType.swift */; };
+		C9EECA9326541781008FE535 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA9226541781008FE535 /* Dependencies.swift */; };
 		C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F87DA92652D18100A05B90 /* GarmentData.swift */; };
 		E4A729E504615EBF5EC36BEB /* Pods_Matthew_Dolan_lululemon_iOS_Assessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913A261B2B37A30FF01C7DDF /* Pods_Matthew_Dolan_lululemon_iOS_Assessment.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		C977B0B6264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift; sourceTree = "<group>"; };
 		C977B0BC264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EECA72265386B2008FE535 /* DatabaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseType.swift; sourceTree = "<group>"; };
+		C9EECA9226541781008FE535 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		C9F87DA92652D18100A05B90 /* GarmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentData.swift; sourceTree = "<group>"; };
 		DD2FCAAB68C90C253432A5BE /* Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig"; path = "Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment/Pods-Matthew-Dolan-lululemon-iOS-Assessment.release.xcconfig"; sourceTree = "<group>"; };
 		E496EFF4381C79F9620A7850 /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,8 +162,10 @@
 		C977B097264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				C9EECA8526540C8C008FE535 /* Dependencies */,
 				C977B098264F689500C2BD99 /* AppDelegate.swift */,
 				C977B09A264F689500C2BD99 /* SceneDelegate.swift */,
+				C9EECA7A265386CE008FE535 /* Service */,
 				C92439472650850200D8F6CC /* Data Model */,
 				C9243946265084C300D8F6CC /* View */,
 				C92439422650847E00D8F6CC /* Controller */,
@@ -173,6 +179,7 @@
 		C977B0AE264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				C9EECA7B26539041008FE535 /* Mock */,
 				C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */,
 				C977B0B1264F689700C2BD99 /* Info.plist */,
 			);
@@ -186,6 +193,29 @@
 				C977B0BC264F689700C2BD99 /* Info.plist */,
 			);
 			path = "Matthew-Dolan-lululemon-iOS-AssessmentUITests";
+			sourceTree = "<group>";
+		};
+		C9EECA7A265386CE008FE535 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C9EECA72265386B2008FE535 /* DatabaseType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C9EECA7B26539041008FE535 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C9EECA8526540C8C008FE535 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C9EECA9226541781008FE535 /* Dependencies.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		E38210C070351A8065A1593D /* Frameworks */ = {
@@ -436,6 +466,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EECA9326541781008FE535 /* Dependencies.swift in Sources */,
+				C9EECA73265386B3008FE535 /* DatabaseType.swift in Sources */,
 				C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */,
 				C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */,
 				C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */,
