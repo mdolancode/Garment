@@ -16,22 +16,29 @@ class Matthew_Dolan_lululemon_iOS_AssessmentTests: XCTestCase {
     func createNewMocks() {
         mockDataBase = MockDatabaseLayer()
     }
+    
     func setMocks() {
         dependencies.database = mockDataBase
     }
+    
     func setUpVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         vc = storyboard.instantiateViewController(withIdentifier: "AddGarmentViewController") as? AddGarmentViewController
         XCTAssertNotNil(vc)
         vc.loadViewIfNeeded()
     }
+    
     override func setUpWithError() throws {
         createNewMocks()
         setMocks()
     }
+    
     override func tearDownWithError() throws {
         vc = nil
     }
+    
+    //MARK: - TestDelegateCalledWhenSaveSuccessful
+    
     func testDelegateCalledWhenSaveSuccessful() throws {
         // Given the Data is saved Successfully
         // When button Tapped
@@ -48,6 +55,8 @@ class Matthew_Dolan_lululemon_iOS_AssessmentTests: XCTestCase {
         XCTAssert(mockDelegate.didSaveDataCalled)
     }
     
+    //MARK: - TestDelegateNotCalledWhenSaveUnsuccessful
+    
     func testDelegateNotCalledWhenSaveUnsuccessful() throws {
         // Given the Data is Not saved Successfully
         // When button Tapped
@@ -63,6 +72,8 @@ class Matthew_Dolan_lululemon_iOS_AssessmentTests: XCTestCase {
         vc.saveButtonPressed(vc.saveBarButtonItem)
         XCTAssertFalse(mockDelegate.didSaveDataCalled)
     }
+    
+    //MARK: - TestDelegateNotCalledWhenTextFieldIsEmpty
     
     func testDelegateNotCalledWhenTextFieldIsEmpty() throws {
             // Given the Textfield is Empty
