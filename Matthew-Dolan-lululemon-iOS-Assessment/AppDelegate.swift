@@ -13,10 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // TODO: Delete
-        // Location of realm file
-        //print(Realm.Configuration.defaultConfiguration.fileURL)
-        
         do {
             _ = try Realm()
         } catch {
