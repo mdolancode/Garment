@@ -1,18 +1,17 @@
 //
 //  AddViewController.swift
-//  Matthew-Dolan-Lululemon-iOS-Assessment
+//  Matthew-Dolan-lululemon-iOS-Assessment
 //
 //  Created by Matt Dolan External macOS on 2021-05-15.
 //
 
 import UIKit
-import RealmSwift
 
 class AddGarmentViewController: UIViewController {
     
-    let realm = try! Realm()
-//    let dependencies: Dependencies? = nil
-    var delegate: AddGarmentDelegate?
+    var dependencies = Dependencies.shared
+
+    weak var delegate: PersistenceEventDelegate?
     
     @IBOutlet weak var navigationBar: UINavigationBar!
     @IBOutlet weak var saveBarButtonItem: UIBarButtonItem!
@@ -71,18 +70,8 @@ class AddGarmentViewController: UIViewController {
         let dateCreated = Date()
         let garmentData = GarmentData(garmentName: garmentName, dateCreated: dateCreated)
         
-        delegate?.addGarment(garmentData)
-        
-        do {
-            try self.realm.write {
-                self.realm.add(garmentData)
-            }
-        } catch {
-            print("Error saving garment\(error)")
+        if dependencies.database.saveData(garment: garmentData) {
+            delegate?.didSaveData()
         }
-        
-//        if dependencies?.database.save(garment: garmentData) != nil {
-//            //            sendData(garmentData)
-//        }
     }
 }
