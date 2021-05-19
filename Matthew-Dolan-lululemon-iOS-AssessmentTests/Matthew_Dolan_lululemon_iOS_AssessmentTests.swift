@@ -10,9 +10,11 @@ import XCTest
 @testable import Matthew_Dolan_lululemon_iOS_Assessment
 
 class Matthew_Dolan_lululemon_iOS_AssessmentTests: XCTestCase {
+    
     let dependencies = Dependencies.shared
     var mockDataBase = MockDatabaseLayer()
     var vc: AddGarmentViewController!
+    
     func createNewMocks() {
         mockDataBase = MockDatabaseLayer()
     }
