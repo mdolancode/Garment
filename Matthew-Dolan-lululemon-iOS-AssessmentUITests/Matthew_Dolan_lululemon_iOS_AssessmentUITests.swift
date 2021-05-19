@@ -1,6 +1,6 @@
 //
-//  Matthew_Dolan_Lululemon_iOS_AssessmentUITests.swift
-//  Matthew-Dolan-Lululemon-iOS-AssessmentUITests
+//  Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift
+//  Matthew-Dolan-lululemon-iOS-AssessmentUITests
 //
 //  Created by Matt Dolan External macOS on 2021-05-14.
 //
