@@ -12,7 +12,7 @@ class DatabaseLayer {
     
     let realm = try! Realm()
     
-    //MARK: - Save To Realm
+    //MARK: - SaveDataToRealm
     
     func saveData(garment: GarmentData) -> Bool {
         do {
@@ -26,6 +26,8 @@ class DatabaseLayer {
         }
     }
     
+    //MARK: - LoadData
+    
     func loadDataByAlphabeticalOrder() -> Results<GarmentData> {
         realm.objects(GarmentData.self).sorted(byKeyPath: "garmentName", ascending: true)
     }
@@ -34,6 +36,8 @@ class DatabaseLayer {
         realm.objects(GarmentData.self).sorted(byKeyPath: "dateCreated", ascending: true)
     }
 }
+
+//MARK: - MockDatabaseLayer
 
 class MockDatabaseLayer: DatabaseLayer {
     var savesSuccessfully: Bool = false
