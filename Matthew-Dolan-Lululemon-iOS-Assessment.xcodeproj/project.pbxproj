@@ -12,6 +12,7 @@
 		C924393E2650846400D8F6CC /* AddGarmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924393D2650846400D8F6CC /* AddGarmentViewController.swift */; };
 		C93A9501265430C800BD9426 /* MockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A9500265430C800BD9426 /* MockDelegate.swift */; };
 		C95A47352654D30900CCC1CF /* PersistenceEventDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A47342654D30800CCC1CF /* PersistenceEventDelegate.swift */; };
+		C95A47422654FB2700CCC1CF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C95A47412654FB2700CCC1CF /* README.md */; };
 		C977B099264F689500C2BD99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B098264F689500C2BD99 /* AppDelegate.swift */; };
 		C977B09B264F689500C2BD99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B09A264F689500C2BD99 /* SceneDelegate.swift */; };
 		C977B09D264F689500C2BD99 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B09C264F689500C2BD99 /* ListViewController.swift */; };
@@ -54,6 +55,7 @@
 		C924393D2650846400D8F6CC /* AddGarmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGarmentViewController.swift; sourceTree = "<group>"; };
 		C93A9500265430C800BD9426 /* MockDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDelegate.swift; sourceTree = "<group>"; };
 		C95A47342654D30800CCC1CF /* PersistenceEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceEventDelegate.swift; sourceTree = "<group>"; };
+		C95A47412654FB2700CCC1CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C977B095264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B098264F689500C2BD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C977B09A264F689500C2BD99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		C977B08C264F689500C2BD99 = {
 			isa = PBXGroup;
 			children = (
+				C95A47412654FB2700CCC1CF /* README.md */,
 				C977B097264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment */,
 				C977B0AE264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests */,
 				C977B0B9264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests */,
@@ -344,6 +347,7 @@
 			files = (
 				C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */,
 				C977B0A2264F689700C2BD99 /* Assets.xcassets in Resources */,
+				C95A47422654FB2700CCC1CF /* README.md in Resources */,
 				C977B0A0264F689500C2BD99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
