@@ -10,8 +10,7 @@ import RealmSwift
 
 class ListViewController: UIViewController {
     
-    let realm = try! Realm()
-    //    let dependencies: Dependencies? = nil
+    var dependencies = Dependencies.shared
     var garments: Results<GarmentData>?
     
     @IBOutlet weak var navigationBar: UINavigationBar!
@@ -27,7 +26,7 @@ class ListViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        
+                
         loadGarmentData()
     }
     
@@ -91,8 +90,8 @@ class ListViewController: UIViewController {
     //MARK: - LoadGarmentData
     
     func loadGarmentData() {
-        self.garments = self.realm.objects(GarmentData.self)
-        self.tableView.reloadData()
+        garments = dependencies.database.loadDataByDateCreated()
+        tableView.reloadData()
     }
     
     //MARK: - NavigateToAddGarmentViewController
@@ -110,23 +109,16 @@ class ListViewController: UIViewController {
     //MARK: - SortAlphabeticalOrder
     
     @IBAction func alphaButtonPressed(_ sender: UIButton) {
-        reloadDataByAlphabeticalOrder()
-    }
-    
-    func reloadDataByAlphabeticalOrder() {
-        garments = realm.objects(GarmentData.self).sorted(byKeyPath: "garmentName", ascending: true)
-        self.tableView.reloadData()
-    }
-    
-    //MARK: - SortByCreationTime
-    
-    func reloadDataByDateCreated() {
-        garments = realm.objects(GarmentData.self).sorted(byKeyPath: "dateCreated", ascending: true)
+        garments = dependencies.database.loadDataByAlphabeticalOrder()
         tableView.reloadData()
     }
     
+    
+    //MARK: - SortByCreationTime
+    
     @IBAction func creationTimeButtonPressed(_ sender: UIButton) {
-        reloadDataByDateCreated()
+        garments = dependencies.database.loadDataByDateCreated()
+        tableView.reloadData()
     }
 }
 
@@ -137,29 +129,37 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return self.hearderView()
     }
-    
+
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 2
     }
-    
+
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return self.footerView()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return garments?.count ?? 1
+        guard let count = garments?.count, count > 0 else {
+            return 1
+        }
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
-        
-        // TODO: Not being populated when there are no garments loadGaramentData happens first.????
-        cell.textLabel?.text = garments?[indexPath.row].garmentName ?? "No garments added yet."
+
+        if let count = garments?.count,
+           count == 0 {
+            cell.textLabel?.text = "No garments added yet."
+        } else {
+            cell.textLabel?.text = garments?[indexPath.row].garmentName
+        }
+
         cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
         
         return cell
@@ -175,12 +175,10 @@ extension ListViewController: UITableViewDelegate {
     }
 }
 
-//MARK: - AddGarmentDelegate
+//MARK: - PersistenceEventDelegate
 
-extension ListViewController: AddGarmentDelegate {
-    func addDateCreated(_ dateCreated: GarmentData) {}
-    
-    func addGarment(_ garment: GarmentData) {
+extension ListViewController: PersistenceEventDelegate {
+    func didSaveData() {
         self.dismiss(animated: true) {
             self.tableView.reloadData()
         }
