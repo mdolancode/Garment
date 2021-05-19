@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Matthew-Dolan-Lululemon-iOS-Assessment
+//  Matthew-Dolan-lululemon-iOS-Assessment
 //
 //  Created by Matt Dolan External macOS on 2021-05-14.
 //
