@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2819A1ECA93F1B2C10248A9A /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E496EFF4381C79F9620A7850 /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework */; };
 		3CA304D764DD969637B0463C /* Pods_Matthew_Dolan_lululemon_iOS_AssessmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FB1033DDA1AFDC6EA6E680 /* Pods_Matthew_Dolan_lululemon_iOS_AssessmentTests.framework */; };
 		C924393E2650846400D8F6CC /* AddGarmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924393D2650846400D8F6CC /* AddGarmentViewController.swift */; };
 		C93A9501265430C800BD9426 /* MockDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A9500265430C800BD9426 /* MockDelegate.swift */; };
@@ -20,7 +19,6 @@
 		C977B0A2264F689700C2BD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A1264F689700C2BD99 /* Assets.xcassets */; };
 		C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A3264F689700C2BD99 /* LaunchScreen.storyboard */; };
 		C977B0B0264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */; };
-		C977B0BB264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */; };
 		C9EECA73265386B3008FE535 /* DatabaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA72265386B2008FE535 /* DatabaseLayer.swift */; };
 		C9EECA9326541781008FE535 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA9226541781008FE535 /* Dependencies.swift */; };
 		C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F87DA92652D18100A05B90 /* GarmentData.swift */; };
@@ -29,13 +27,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		C977B0AC264F689700C2BD99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C977B08D264F689500C2BD99 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C977B094264F689500C2BD99;
-			remoteInfo = "Matthew-Dolan-Lululemon-iOS-Assessment";
-		};
-		C977B0B7264F689700C2BD99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C977B08D264F689500C2BD99 /* Project object */;
 			proxyType = 1;
@@ -67,9 +58,6 @@
 		C977B0AB264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-AssessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B0AF264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_lululemon_iOS_AssessmentTests.swift; sourceTree = "<group>"; };
 		C977B0B1264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C977B0B6264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift; sourceTree = "<group>"; };
-		C977B0BC264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9EECA72265386B2008FE535 /* DatabaseLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseLayer.swift; sourceTree = "<group>"; };
 		C9EECA9226541781008FE535 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		C9F87DA92652D18100A05B90 /* GarmentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentData.swift; sourceTree = "<group>"; };
@@ -91,14 +79,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA304D764DD969637B0463C /* Pods_Matthew_Dolan_lululemon_iOS_AssessmentTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C977B0B3264F689700C2BD99 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2819A1ECA93F1B2C10248A9A /* Pods_Matthew_Dolan_lululemon_iOS_Assessment_Matthew_Dolan_lululemon_iOS_AssessmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +138,6 @@
 				C95A47412654FB2700CCC1CF /* README.md */,
 				C977B097264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment */,
 				C977B0AE264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests */,
-				C977B0B9264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests */,
 				C977B096264F689500C2BD99 /* Products */,
 				33D07E8913756E86288235B3 /* Pods */,
 				E38210C070351A8065A1593D /* Frameworks */,
@@ -170,7 +149,6 @@
 			children = (
 				C977B095264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment.app */,
 				C977B0AB264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests.xctest */,
-				C977B0B6264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,15 +177,6 @@
 				C977B0B1264F689700C2BD99 /* Info.plist */,
 			);
 			path = "Matthew-Dolan-lululemon-iOS-AssessmentTests";
-			sourceTree = "<group>";
-		};
-		C977B0B9264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C977B0BA264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift */,
-				C977B0BC264F689700C2BD99 /* Info.plist */,
-			);
-			path = "Matthew-Dolan-lululemon-iOS-AssessmentUITests";
 			sourceTree = "<group>";
 		};
 		C9EECA7A265386CE008FE535 /* Protocols */ = {
@@ -278,26 +247,6 @@
 			productReference = C977B0AB264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C977B0B5264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C977B0C5264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Matthew-Dolan-lululemon-iOS-AssessmentUITests" */;
-			buildPhases = (
-				C50F5707CF31C859F300FEB1 /* [CP] Check Pods Manifest.lock */,
-				C977B0B2264F689700C2BD99 /* Sources */,
-				C977B0B3264F689700C2BD99 /* Frameworks */,
-				C977B0B4264F689700C2BD99 /* Resources */,
-				75D988C61DF21C9623B01BEA /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C977B0B8264F689700C2BD99 /* PBXTargetDependency */,
-			);
-			name = "Matthew-Dolan-lululemon-iOS-AssessmentUITests";
-			productName = "Matthew-Dolan-Lululemon-iOS-AssessmentUITests";
-			productReference = C977B0B6264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,10 +260,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					C977B0AA264F689700C2BD99 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = C977B094264F689500C2BD99;
-					};
-					C977B0B5264F689700C2BD99 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = C977B094264F689500C2BD99;
 					};
@@ -335,7 +280,6 @@
 			targets = (
 				C977B094264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment */,
 				C977B0AA264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentTests */,
-				C977B0B5264F689700C2BD99 /* Matthew-Dolan-lululemon-iOS-AssessmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,13 +297,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C977B0A9264F689700C2BD99 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C977B0B4264F689700C2BD99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,45 +343,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment/Pods-Matthew-Dolan-lululemon-iOS-Assessment-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75D988C61DF21C9623B01BEA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C50F5707CF31C859F300FEB1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7DB269F799532EA0FF87838 /* [CP] Check Pods Manifest.lock */ = {
@@ -496,14 +394,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C977B0B2264F689700C2BD99 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C977B0BB264F689700C2BD99 /* Matthew_Dolan_lululemon_iOS_AssessmentUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -511,11 +401,6 @@
 			isa = PBXTargetDependency;
 			target = C977B094264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment */;
 			targetProxy = C977B0AC264F689700C2BD99 /* PBXContainerItemProxy */;
-		};
-		C977B0B8264F689700C2BD99 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C977B094264F689500C2BD99 /* Matthew-Dolan-lululemon-iOS-Assessment */;
-			targetProxy = C977B0B7264F689700C2BD99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -741,48 +626,6 @@
 			};
 			name = Release;
 		};
-		C977B0C6264F689700C2BD99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 971BC2ABB4BAC7F894DB4142 /* Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5CDGW4297F;
-				INFOPLIST_FILE = "Matthew-Dolan-Lululemon-iOS-AssessmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Matthew-Dolan-Lululemon-iOS-AssessmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Matthew-Dolan-Lululemon-iOS-Assessment";
-			};
-			name = Debug;
-		};
-		C977B0C7264F689700C2BD99 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DB7715C4F1BFA9119376EB1 /* Pods-Matthew-Dolan-lululemon-iOS-Assessment-Matthew-Dolan-lululemon-iOS-AssessmentUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5CDGW4297F;
-				INFOPLIST_FILE = "Matthew-Dolan-Lululemon-iOS-AssessmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Matthew-Dolan-Lululemon-iOS-AssessmentUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Matthew-Dolan-Lululemon-iOS-Assessment";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -809,15 +652,6 @@
 			buildConfigurations = (
 				C977B0C3264F689700C2BD99 /* Debug */,
 				C977B0C4264F689700C2BD99 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C977B0C5264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Matthew-Dolan-lululemon-iOS-AssessmentUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C977B0C6264F689700C2BD99 /* Debug */,
-				C977B0C7264F689700C2BD99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
