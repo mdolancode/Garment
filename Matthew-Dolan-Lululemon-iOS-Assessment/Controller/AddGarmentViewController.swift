@@ -58,7 +58,7 @@ class AddGarmentViewController: UIViewController {
         addGarmentTextField.layer.borderColor = UIColor.black.cgColor
     }
     
-    //MARK: - Save Button
+    //MARK: - SaveButton
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         
