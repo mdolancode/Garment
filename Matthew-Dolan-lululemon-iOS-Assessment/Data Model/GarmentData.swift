@@ -9,6 +9,7 @@ import UIKit
 import RealmSwift
 
 class GarmentData: Object {
+    
     @objc dynamic var garmentName: String = ""
     @objc dynamic var dateCreated: Date?
     
