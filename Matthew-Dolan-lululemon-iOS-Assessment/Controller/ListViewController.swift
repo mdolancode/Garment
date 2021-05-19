@@ -26,7 +26,7 @@ class ListViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-                
+        
         loadGarmentData()
     }
     
@@ -71,7 +71,7 @@ class ListViewController: UIViewController {
         
     }
     
-    //MARK: - Header and Footer
+    //MARK: - HeaderAndFooter
     
     private func hearderView() -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 2))
@@ -129,15 +129,15 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 2
     }
-
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return self.hearderView()
     }
-
+    
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 2
     }
-
+    
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return self.footerView()
     }
@@ -152,14 +152,14 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)
-
+        
         if let count = garments?.count,
            count == 0 {
             cell.textLabel?.text = "No garments added yet."
         } else {
             cell.textLabel?.text = garments?[indexPath.row].garmentName
         }
-
+        
         cell.textLabel?.font = UIFont(name: "MarkerFelt-Thin", size: 16)
         
         return cell
