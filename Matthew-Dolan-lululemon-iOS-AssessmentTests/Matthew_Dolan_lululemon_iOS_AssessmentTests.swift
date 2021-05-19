@@ -1,33 +1,82 @@
 //
-//  Matthew_Dolan_Lululemon_iOS_AssessmentTests.swift
-//  Matthew-Dolan-Lululemon-iOS-AssessmentTests
+//  Matthew_Dolan_lululemon_iOS_AssessmentTests.swift
+//  Matthew-Dolan-lululemon-iOS-AssessmentTests
 //
 //  Created by Matt Dolan External macOS on 2021-05-14.
 //
 
+import UIKit
 import XCTest
 @testable import Matthew_Dolan_lululemon_iOS_Assessment
 
 class Matthew_Dolan_lululemon_iOS_AssessmentTests: XCTestCase {
-
+    let dependencies = Dependencies.shared
+    var mockDataBase = MockDatabaseLayer()
+    var vc: AddGarmentViewController!
+    func createNewMocks() {
+        mockDataBase = MockDatabaseLayer()
+    }
+    func setMocks() {
+        dependencies.database = mockDataBase
+    }
+    func setUpVC() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        vc = storyboard.instantiateViewController(withIdentifier: "AddGarmentViewController") as? AddGarmentViewController
+        XCTAssertNotNil(vc)
+        vc.loadViewIfNeeded()
+    }
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        createNewMocks()
+        setMocks()
     }
-
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        vc = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDelegateCalledWhenSaveSuccessful() throws {
+        // Given the Data is saved Successfully
+        // When button Tapped
+        // Then Delegate is Called
+        let mockDelegate = MockDelegate()
+        mockDataBase.savesSuccessfully = true
+        setUpVC()
+        vc.delegate = mockDelegate
+        vc.addGarmentTextField.text = "test text"
+        vc.viewDidLoad()
+        vc.viewWillAppear(false)
+        vc.viewDidAppear(false)
+        vc.saveButtonPressed(vc.saveBarButtonItem)
+        XCTAssert(mockDelegate.didSaveDataCalled)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testDelegateNotCalledWhenSaveUnsuccessful() throws {
+        // Given the Data is Not saved Successfully
+        // When button Tapped
+        // Then Delegate is Not Called
+        let mockDelegate = MockDelegate()
+        mockDataBase.savesSuccessfully = false
+        setUpVC()
+        vc.delegate = mockDelegate
+        vc.addGarmentTextField.text = "test text"
+        vc.viewDidLoad()
+        vc.viewWillAppear(false)
+        vc.viewDidAppear(false)
+        vc.saveButtonPressed(vc.saveBarButtonItem)
+        XCTAssertFalse(mockDelegate.didSaveDataCalled)
+    }
+    
+    func testDelegateNotCalledWhenTextFieldIsEmpty() throws {
+            // Given the Textfield is Empty
+            // When button Tapped
+            // Then Delegate is Not called
+            let mockDelegate = MockDelegate()
+            mockDataBase.savesSuccessfully = true
+            setUpVC()
+            vc.delegate = mockDelegate
+            vc.addGarmentTextField.text = nil
+            vc.viewDidLoad()
+            vc.viewWillAppear(false)
+            vc.viewDidAppear(false)
+            vc.saveButtonPressed(vc.saveBarButtonItem)
+            XCTAssertFalse(mockDelegate.didSaveDataCalled)
         }
-    }
-
 }
