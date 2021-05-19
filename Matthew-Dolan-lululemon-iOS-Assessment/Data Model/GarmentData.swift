@@ -1,17 +1,12 @@
 //
 //  Garment.swift
-//  Matthew-Dolan-Lululemon-iOS-Assessment
+//  Matthew-Dolan-lululemon-iOS-Assessment
 //
 //  Created by Matt Dolan External macOS on 2021-05-17.
 //
 
 import UIKit
 import RealmSwift
-
-protocol AddGarmentDelegate {
-    func addGarment(_ garment: GarmentData)
-    func addDateCreated(_ dateCreated: GarmentData)
-}
 
 class GarmentData: Object {
     @objc dynamic var garmentName: String = ""
