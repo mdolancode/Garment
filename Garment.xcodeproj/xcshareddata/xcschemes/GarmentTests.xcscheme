@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C977B0AA264F689700C2BD99"
-               BuildableName = "Matthew-Dolan-iOS-Technical-AssessmentTests.xctest"
-               BlueprintName = "Matthew-Dolan-iOS-Technical-AssessmentTests"
-               ReferencedContainer = "container:Matthew-Dolan-iOS-Technical-Assessment.xcodeproj">
+               BuildableName = "GarmentTests.xctest"
+               BlueprintName = "GarmentTests"
+               ReferencedContainer = "container:Garment.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

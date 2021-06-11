@@ -1,6 +1,6 @@
 //
 //  ListViewController.swift
-//  Matthew-Dolan-iOS-Technical-Assessment
+//  Garment
 //
 //  Created by Matt Dolan External macOS on 2021-05-14.
 //

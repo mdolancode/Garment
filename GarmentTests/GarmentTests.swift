@@ -1,15 +1,15 @@
 //
-//  Matthew_Dolan_iOS_Technical_AssessmentTests.swift
-//  Matthew-Dolan-iOS-Technical-AssessmentTests
+//  GarmentTests.swift
+//  Garment
 //
 //  Created by Matt Dolan External macOS on 2021-05-14.
 //
 
 import UIKit
 import XCTest
-@testable import Matthew_Dolan_iOS_Technical_Assessment
+@testable import Garment
 
-class Matthew_Dolan_iOS_Technical_AssessmentTests: XCTestCase {
+class GarmentTests: XCTestCase {
     
     let dependencies = Dependencies.shared
     var mockDataBase = MockDatabaseLayer()

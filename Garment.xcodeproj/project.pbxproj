@@ -18,7 +18,7 @@
 		C977B0A0264F689500C2BD99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B09E264F689500C2BD99 /* Main.storyboard */; };
 		C977B0A2264F689700C2BD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A1264F689700C2BD99 /* Assets.xcassets */; };
 		C977B0A5264F689700C2BD99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C977B0A3264F689700C2BD99 /* LaunchScreen.storyboard */; };
-		C977B0B0264F689700C2BD99 /* Matthew_Dolan_iOS_Technical_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* Matthew_Dolan_iOS_Technical_AssessmentTests.swift */; };
+		C977B0B0264F689700C2BD99 /* GarmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C977B0AF264F689700C2BD99 /* GarmentTests.swift */; };
 		C9EECA73265386B3008FE535 /* DatabaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA72265386B2008FE535 /* DatabaseLayer.swift */; };
 		C9EECA9326541781008FE535 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EECA9226541781008FE535 /* Dependencies.swift */; };
 		C9F87DAA2652D18100A05B90 /* GarmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F87DA92652D18100A05B90 /* GarmentData.swift */; };
@@ -47,7 +47,7 @@
 		C93A9500265430C800BD9426 /* MockDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDelegate.swift; sourceTree = "<group>"; };
 		C95A47342654D30800CCC1CF /* PersistenceEventDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceEventDelegate.swift; sourceTree = "<group>"; };
 		C95A47412654FB2700CCC1CF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C977B095264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matthew-Dolan-iOS-Technical-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C977B095264F689500C2BD99 /* Garment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C977B098264F689500C2BD99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C977B09A264F689500C2BD99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C977B09C264F689500C2BD99 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 		C977B0A1264F689700C2BD99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C977B0A4264F689700C2BD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C977B0A6264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C977B0AB264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Matthew-Dolan-iOS-Technical-AssessmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C977B0AF264F689700C2BD99 /* Matthew_Dolan_iOS_Technical_AssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matthew_Dolan_iOS_Technical_AssessmentTests.swift; sourceTree = "<group>"; };
+		C977B0AB264F689700C2BD99 /* GarmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C977B0AF264F689700C2BD99 /* GarmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentTests.swift; sourceTree = "<group>"; };
 		C977B0B1264F689700C2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9EECA72265386B2008FE535 /* DatabaseLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseLayer.swift; sourceTree = "<group>"; };
 		C9EECA9226541781008FE535 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
@@ -136,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				C95A47412654FB2700CCC1CF /* README.md */,
-				C977B097264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment */,
-				C977B0AE264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests */,
+				C977B097264F689500C2BD99 /* Garment */,
+				C977B0AE264F689700C2BD99 /* GarmentTests */,
 				C977B096264F689500C2BD99 /* Products */,
 				33D07E8913756E86288235B3 /* Pods */,
 				E38210C070351A8065A1593D /* Frameworks */,
@@ -147,13 +147,13 @@
 		C977B096264F689500C2BD99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C977B095264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment.app */,
-				C977B0AB264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests.xctest */,
+				C977B095264F689500C2BD99 /* Garment.app */,
+				C977B0AB264F689700C2BD99 /* GarmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C977B097264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment */ = {
+		C977B097264F689500C2BD99 /* Garment */ = {
 			isa = PBXGroup;
 			children = (
 				C977B098264F689500C2BD99 /* AppDelegate.swift */,
@@ -166,17 +166,17 @@
 				C95A4729265488B000CCC1CF /* Supporting Files */,
 				C977B0A6264F689700C2BD99 /* Info.plist */,
 			);
-			path = "Matthew-Dolan-iOS-Technical-Assessment";
+			path = Garment;
 			sourceTree = "<group>";
 		};
-		C977B0AE264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests */ = {
+		C977B0AE264F689700C2BD99 /* GarmentTests */ = {
 			isa = PBXGroup;
 			children = (
 				C93A9500265430C800BD9426 /* MockDelegate.swift */,
-				C977B0AF264F689700C2BD99 /* Matthew_Dolan_iOS_Technical_AssessmentTests.swift */,
+				C977B0AF264F689700C2BD99 /* GarmentTests.swift */,
 				C977B0B1264F689700C2BD99 /* Info.plist */,
 			);
-			path = "Matthew-Dolan-iOS-Technical-AssessmentTests";
+			path = GarmentTests;
 			sourceTree = "<group>";
 		};
 		C9EECA7A265386CE008FE535 /* Protocols */ = {
@@ -209,9 +209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C977B094264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment */ = {
+		C977B094264F689500C2BD99 /* Garment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C977B0BF264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Matthew-Dolan-iOS-Technical-Assessment" */;
+			buildConfigurationList = C977B0BF264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Garment" */;
 			buildPhases = (
 				E7DB269F799532EA0FF87838 /* [CP] Check Pods Manifest.lock */,
 				C977B091264F689500C2BD99 /* Sources */,
@@ -223,14 +223,14 @@
 			);
 			dependencies = (
 			);
-			name = "Matthew-Dolan-iOS-Technical-Assessment";
+			name = Garment;
 			productName = "Matthew-Dolan-Lululemon-iOS-Assessment";
-			productReference = C977B095264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment.app */;
+			productReference = C977B095264F689500C2BD99 /* Garment.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C977B0AA264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests */ = {
+		C977B0AA264F689700C2BD99 /* GarmentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C977B0C2264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Matthew-Dolan-iOS-Technical-AssessmentTests" */;
+			buildConfigurationList = C977B0C2264F689700C2BD99 /* Build configuration list for PBXNativeTarget "GarmentTests" */;
 			buildPhases = (
 				324B696E560EEFB20DB827FC /* [CP] Check Pods Manifest.lock */,
 				C977B0A7264F689700C2BD99 /* Sources */,
@@ -242,9 +242,9 @@
 			dependencies = (
 				C977B0AD264F689700C2BD99 /* PBXTargetDependency */,
 			);
-			name = "Matthew-Dolan-iOS-Technical-AssessmentTests";
+			name = GarmentTests;
 			productName = "Matthew-Dolan-Lululemon-iOS-AssessmentTests";
-			productReference = C977B0AB264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests.xctest */;
+			productReference = C977B0AB264F689700C2BD99 /* GarmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C977B090264F689500C2BD99 /* Build configuration list for PBXProject "Matthew-Dolan-iOS-Technical-Assessment" */;
+			buildConfigurationList = C977B090264F689500C2BD99 /* Build configuration list for PBXProject "Garment" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -278,8 +278,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C977B094264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment */,
-				C977B0AA264F689700C2BD99 /* Matthew-Dolan-iOS-Technical-AssessmentTests */,
+				C977B094264F689500C2BD99 /* Garment */,
+				C977B0AA264F689700C2BD99 /* GarmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -390,7 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93A9501265430C800BD9426 /* MockDelegate.swift in Sources */,
-				C977B0B0264F689700C2BD99 /* Matthew_Dolan_iOS_Technical_AssessmentTests.swift in Sources */,
+				C977B0B0264F689700C2BD99 /* GarmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +399,7 @@
 /* Begin PBXTargetDependency section */
 		C977B0AD264F689700C2BD99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C977B094264F689500C2BD99 /* Matthew-Dolan-iOS-Technical-Assessment */;
+			target = C977B094264F689500C2BD99 /* Garment */;
 			targetProxy = C977B0AC264F689700C2BD99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -548,12 +548,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CDGW4297F;
-				INFOPLIST_FILE = "Matthew-Dolan-iOS-Technical-Assessment/Info.plist";
+				INFOPLIST_FILE = Garment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Matthew-Dolan-iOS-Technical-Assessment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdolan.Garment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,12 +568,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CDGW4297F;
-				INFOPLIST_FILE = "Matthew-Dolan-iOS-Technical-Assessment/Info.plist";
+				INFOPLIST_FILE = Garment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Matthew-Dolan-iOS-Technical-Assessment";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdolan.Garment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -588,18 +588,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CDGW4297F;
-				INFOPLIST_FILE = "Matthew-Dolan-iOS-Technical-AssessmentTests/Info.plist";
+				INFOPLIST_FILE = GarmentTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Matthew-Dolan-iOS-Technical-AssessmentTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdolan.GarmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Matthew-Dolan-iOS-Technical-Assessment.app/Matthew-Dolan-iOS-Technical-Assessment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garment.app/Garment";
 			};
 			name = Debug;
 		};
@@ -611,25 +611,25 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5CDGW4297F;
-				INFOPLIST_FILE = "Matthew-Dolan-iOS-Technical-AssessmentTests/Info.plist";
+				INFOPLIST_FILE = GarmentTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewdolan.Matthew-Dolan-iOS-Technical-AssessmentTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthewdolan.GarmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Matthew-Dolan-iOS-Technical-Assessment.app/Matthew-Dolan-iOS-Technical-Assessment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garment.app/Garment";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C977B090264F689500C2BD99 /* Build configuration list for PBXProject "Matthew-Dolan-iOS-Technical-Assessment" */ = {
+		C977B090264F689500C2BD99 /* Build configuration list for PBXProject "Garment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C977B0BD264F689700C2BD99 /* Debug */,
@@ -638,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C977B0BF264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Matthew-Dolan-iOS-Technical-Assessment" */ = {
+		C977B0BF264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Garment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C977B0C0264F689700C2BD99 /* Debug */,
@@ -647,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C977B0C2264F689700C2BD99 /* Build configuration list for PBXNativeTarget "Matthew-Dolan-iOS-Technical-AssessmentTests" */ = {
+		C977B0C2264F689700C2BD99 /* Build configuration list for PBXNativeTarget "GarmentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C977B0C3264F689700C2BD99 /* Debug */,

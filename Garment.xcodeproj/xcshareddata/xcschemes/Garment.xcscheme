@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C977B094264F689500C2BD99"
-               BuildableName = "Matthew-Dolan-iOS-Technical-Assessment.app"
-               BlueprintName = "Matthew-Dolan-iOS-Technical-Assessment"
-               ReferencedContainer = "container:Matthew-Dolan-iOS-Technical-Assessment.xcodeproj">
+               BuildableName = "Garment.app"
+               BlueprintName = "Garment"
+               ReferencedContainer = "container:Garment.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C977B094264F689500C2BD99"
-            BuildableName = "Matthew-Dolan-iOS-Technical-Assessment.app"
-            BlueprintName = "Matthew-Dolan-iOS-Technical-Assessment"
-            ReferencedContainer = "container:Matthew-Dolan-iOS-Technical-Assessment.xcodeproj">
+            BuildableName = "Garment.app"
+            BlueprintName = "Garment"
+            ReferencedContainer = "container:Garment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C977B094264F689500C2BD99"
-            BuildableName = "Matthew-Dolan-iOS-Technical-Assessment.app"
-            BlueprintName = "Matthew-Dolan-iOS-Technical-Assessment"
-            ReferencedContainer = "container:Matthew-Dolan-iOS-Technical-Assessment.xcodeproj">
+            BuildableName = "Garment.app"
+            BlueprintName = "Garment"
+            ReferencedContainer = "container:Garment.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
