@@ -1,15 +1,15 @@
 //
-//  Matthew_Dolan_lululemon_iOS_AssessmentTests.swift
-//  Matthew-Dolan-lululemon-iOS-AssessmentTests
+//  Matthew_Dolan_iOS_Technical_AssessmentTests.swift
+//  Matthew-Dolan-iOS-Technical-AssessmentTests
 //
 //  Created by Matt Dolan External macOS on 2021-05-14.
 //
 
 import UIKit
 import XCTest
-@testable import Matthew_Dolan_lululemon_iOS_Assessment
+@testable import Matthew_Dolan_iOS_Technical_Assessment
 
-class Matthew_Dolan_lululemon_iOS_AssessmentTests: XCTestCase {
+class Matthew_Dolan_iOS_Technical_AssessmentTests: XCTestCase {
     
     let dependencies = Dependencies.shared
     var mockDataBase = MockDatabaseLayer()

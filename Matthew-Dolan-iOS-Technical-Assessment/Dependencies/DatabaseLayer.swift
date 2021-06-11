@@ -1,6 +1,6 @@
 //
 //  DatabaseLayer.swift
-//  Matthew-Dolan-lululemon-iOS-Assessment
+//  Matthew-Dolan-iOS-Technical-Assessment
 //
 //  Created by Matt Dolan External macOS on 2021-05-17.
 //
