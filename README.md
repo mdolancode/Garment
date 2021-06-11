@@ -1,4 +1,4 @@
-Hi lululemon iOS Developers,
+Hi iOS Developers,
 
 Thank you for reviewing my code for this project. 
 
