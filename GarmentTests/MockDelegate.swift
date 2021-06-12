@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Matthew_Dolan_iOS_Technical_Assessment
+@testable import Garment
 
 class MockDelegate: PersistenceEventDelegate {
     var didSaveDataCalled = false
