@@ -73,7 +73,7 @@ class ListViewController: UIViewController {
     
     //MARK: - HeaderAndFooter
     
-    private func hearderView() -> UIView {
+    private func headerView() -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 2))
         view.backgroundColor = .black
         
@@ -131,7 +131,7 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return self.hearderView()
+        return self.headerView()
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
